@@ -1,0 +1,271 @@
+/* Hanken Grotesk */
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+/* Geist */
+@import url("https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+:root {
+  /* ========================================
+     Colors
+     ======================================== */
+
+  /* Brand */
+  --color-primary: #ff0000;
+  --color-primary-hover: #e60000;
+  --color-primary-active: #cc0000;
+  --color-primary-light: #ff5540;
+
+  /* Background */
+  --color-background: #0f0f0f;
+  --color-background-secondary: #131313;
+
+  /* Surfaces */
+  --color-surface: #282828;
+  --color-surface-hover: #353534;
+  --color-surface-active: #3f3f3f;
+  --color-surface-elevated: #3f3f3f;
+
+  /* Borders */
+  --color-border: #603e39;
+  --color-border-subtle: #3f3f3f;
+  --color-border-strong: #b18780;
+
+  /* Text */
+  --color-text-primary: #e5e2e1;
+  --color-text-secondary: #c8c6c5;
+  --color-text-muted: #b7b5b4;
+  --color-text-disabled: #919090;
+
+  /* Text on Primary */
+  --color-text-on-primary: #ffffff;
+
+  /* Accent */
+  --color-accent: #ffb4a8;
+  --color-accent-light: #ffdad4;
+
+  /* Error */
+  --color-error: #ffb4ab;
+  --color-error-background: #93000a;
+  --color-error-text: #ffdad6;
+
+  /* Glass / Overlay */
+  --color-overlay: rgba(19, 19, 19, 0.8);
+  --color-overlay-light: rgba(40, 40, 40, 0.7);
+
+  /* ========================================
+     Typography
+     ======================================== */
+
+  --font-family-primary: "Hanken Grotesk", sans-serif;
+  --font-family-label: "Geist", sans-serif;
+
+  /* Headings */
+  --font-size-heading-xl: 32px;
+  --font-size-heading-lg: 24px;
+  --font-size-heading-md: 20px;
+
+  --font-weight-heading-xl: 700;
+  --font-weight-heading-lg: 600;
+  --font-weight-heading-md: 600;
+
+  --line-height-heading-xl: 40px;
+  --line-height-heading-lg: 32px;
+  --line-height-heading-md: 28px;
+
+  --letter-spacing-heading-xl: -0.02em;
+  --letter-spacing-heading-lg: -0.01em;
+
+  /* Body */
+  --font-size-body-lg: 16px;
+  --font-size-body-md: 14px;
+
+  --font-weight-body: 400;
+
+  --line-height-body-lg: 24px;
+  --line-height-body-md: 20px;
+
+  /* Labels */
+  --font-size-label-md: 12px;
+  --font-size-label-sm: 11px;
+
+  --font-weight-label-md: 500;
+  --font-weight-label-sm: 600;
+
+  --line-height-label-md: 16px;
+  --line-height-label-sm: 14px;
+
+  --letter-spacing-label: 0.02em;
+
+  /* ========================================
+     Border Radius
+     ======================================== */
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* ========================================
+     Layout
+     ======================================== */
+
+  --spacing-gutter: 16px;
+  --spacing-page: 24px;
+
+  --sidebar-width: 240px;
+  --sidebar-collapsed-width: 72px;
+
+  /* ========================================
+     Spacing
+     ======================================== */
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+
+  /* ========================================
+     Video
+     ======================================== */
+
+  --video-aspect-ratio: 16 / 9;
+  --video-thumbnail-radius: var(--radius-xl);
+
+  /* ========================================
+     Glassmorphism
+     ======================================== */
+
+  --glass-background: rgba(40, 40, 40, 0.75);
+  --glass-border: rgba(229, 226, 225, 0.1);
+  --glass-blur: 20px;
+
+  /* ========================================
+     Sidebar
+     ======================================== */
+
+  --sidebar-background: var(--color-surface);
+  --sidebar-active-background: var(--color-surface-hover);
+  --sidebar-active-indicator: var(--color-primary);
+
+  /* ========================================
+     Components
+     ======================================== */
+
+  --button-radius: var(--radius-xl);
+  --input-radius: var(--radius-md);
+  --card-radius: var(--radius-xl);
+  --chip-radius: var(--radius-full);
+
+  --card-padding: 12px;
+  --video-row-gap: 32px;
+
+  /* ========================================
+     Transitions
+     ======================================== */
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background-secondary);
+  font-family: var(--font-family-primary);
+  color: #fff;
+}
+
+.chakra-container {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: var(--font-family-label);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+  caret-color: #fff;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+}
+
+::placeholder {
+  color: #fff;
+}
+
+input,
+textarea {
+  caret-color: #fff;
+}
+
+button {
+  outline: none;
+}

@@ -1,0 +1,10 @@
+@import "../../index.css";
+
+.active-category {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.active-category:hover {
+  background-color: #fff !important;
+}

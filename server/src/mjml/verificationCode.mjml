@@ -1,0 +1,70 @@
+<mjml lang="en">
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Arial, sans-serif" />
+      <mj-text padding="0" />
+      <mj-class name="heading" font-size="24px" font-weight="bold" />
+      <mj-class name="body-text" font-size="16px" line-height="1.5" />
+      <mj-class
+        name="button"
+        background-color="#4F46E5"
+        color="#FFFFFF"
+        border-radius="3px"
+        padding="10px 25px"
+      />
+    </mj-attributes>
+    <mj-preview>Your Verification Code is Here!</mj-preview>
+  </mj-head>
+  <mj-body background-color="#f0f0f0">
+    <mj-section background-color="#ffffff" padding="20px 0 0">
+      <mj-column>
+        <mj-text padding="0">
+          <p
+            align="center"
+            style="color: #1a3c34; font-size: 30px; font-weight: bold"
+          >
+            The Record
+          </p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section
+      background-color="#ffffff"
+      padding="20px 20px"
+      css-class="mobile-padding"
+    >
+      <mj-column>
+        <mj-text css-class="heading" align="center">
+          Verify Your Email Address
+        </mj-text>
+        <mj-divider border-width="1px" border-color="#dddddd" />
+        <mj-text css-class="body-text">
+          <p align="center">Hello,</p>
+          <p align="center">
+            Thank you. To complete your reseting password, please verify your
+            email address by entering the verification code below:
+          </p>
+          <p
+            style="
+              font-size: 20px;
+              font-weight: bold;
+              text-align: center;
+              margin: 20px 0;
+            "
+          >
+            {{ code }}
+          </p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#f0f0f0" padding="20px 0">
+      <mj-column>
+        <mj-text align="center" color="#666666" font-size="12px">
+          © 2026 Company Name. All rights reserved.<br />
+          123 Street Address, City, State 12345<br />
+          <a href="{{unsubscribe}}" style="color: #666666">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

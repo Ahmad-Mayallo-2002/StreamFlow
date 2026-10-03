@@ -1,0 +1,1 @@
+export type Type = "success" | "error" | "loading" | "info" | "warning" | (string & {});
